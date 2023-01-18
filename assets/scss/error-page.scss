@@ -1,0 +1,168 @@
+
+/* CSS File 
+  ===================
+    Item Name: Erratum - 404 Error pages + Coming soon + login
+    Author: Ashish Maraviya
+    Version: 3
+    Copyright 2023
+===================*/
+/*------------------------------------------------------------------
+  [ Master css file, Table of contents ]
+  
+  00. General css
+  01. Page css
+  
+------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+  # [Color codes]
+    color: #5076db;
+    color: #5bc86d;
+# */
+
+/*------------------------------------------------------------------
+  [Typography]
+  
+  Body copy:      font-family: 'Montserrat', sans-serif;
+-------------------------------------------------------------------*/
+$font-family: 'Montserrat', sans-serif;
+$color-white: #fff;
+
+/*==============
+  [00] Page General css
+=================*/
+body {
+  font-family: $font-family;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+}
+.loader-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: #ffffff;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9;
+  top: 0; 
+}
+.loader {
+  border: 16px solid #111;
+  border-radius: 50%;
+  border-top: 16px double #5076db;
+  border-bottom: 16px double #5076db;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/*==============
+  [01] Page css
+=================*/
+.page-section {
+  .particles-bg {
+    height: 100vh;
+    background-image: url("../images/background-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, .85);
+    .particles-js-canvas-el{
+      position: absolute;
+    }
+  }
+  .content-detail{
+    margin: auto;
+    max-width: 450px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .sub-title, .detail-text {
+      display: block;
+      color: $color-white;
+      text-align: center;
+      -webkit-touch-callout: none; 
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .sub-title{
+      margin-bottom: 15px;
+      font-weight: 600;
+      font-size: 30px;
+    }
+    .global-title {
+      display: block;
+      color: $color-white;
+      font-size: 150px;
+      font-weight: 800;
+      opacity: .5;
+      -webkit-touch-callout: none; 
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      span {
+        animation: animateblur 1s linear forwards;
+        &:nth-child(1) {
+        animation-delay:1s;
+        }
+        &:nth-child(2) {
+        animation-delay:2s;
+        }
+        &:nth-child(3) {
+        animation-delay:3s;
+        }
+      }
+      @keyframes animateblur{
+        0%{
+        opacity: 0;
+        filter: blur(10px);
+        }
+        100%{
+        opacity: 1;
+        filter: blur(0px);
+        }
+      }
+    }
+    .back-btn {
+      margin-top: 15px;
+      z-index: 5;
+      .btn{
+        padding: 8px 15px;
+        color: $color-white;
+        border: 1px solid $color-white;
+        border-radius: 30px;
+        font-size: 14px;
+        &:hover{
+        background-color: #5076db;
+        color: $color-white;
+      }
+      }
+    }
+  }
+}

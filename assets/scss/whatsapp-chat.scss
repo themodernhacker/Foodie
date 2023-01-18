@@ -1,0 +1,236 @@
+
+/*----  Whatsapp chat start  ----*/
+a {
+  text-decoration: none !important;
+}
+.er-style {
+	display: inline-block;
+	position: fixed;
+	letter-spacing: 0.1px;
+	z-index: 13;
+	.er-button {
+		width: 36px;
+		height: 36px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.whatsapp {
+			width: 23px;
+			height: 23px;
+			display: table;
+			margin-right: 0;
+			font-size: 25px;
+			text-align: center;
+			line-height: 38px;
+			cursor: pointer;
+			color: #2ab674;
+		}
+	}
+	.er-panel {
+		display: none;
+		margin-bottom: 5px;
+		width: 275px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.479);
+		background-color: #fff;
+		.er-header {
+			padding: 12px 15px 15px;
+			text-align: center;
+			color: #fff;
+			background: #2ab674;
+		}
+		.er-body {
+			min-width: 250px;
+			white-space: nowrap;
+			list-style: none;
+			overflow-y: auto;
+		}
+	}
+	.er-header {
+		strong {
+			font-size: 15px;
+			line-height: 20px;
+		}
+		p {
+			margin-bottom: 0;
+			color: #fff;
+			font-size: 12px;
+			line-height: 20px;
+		}
+	}
+	.er-list {
+		.d-flex {
+			display: flex;
+		}
+		.er-img-cont {
+			position: relative;
+		}
+		.er-user-img {
+			height: 40px;
+			width: 40px;
+			vertical-align: middle;
+			border-radius: 50%;
+		}
+		.er-status-icon {
+			position: absolute;
+			bottom: 5px;
+			right: 1px;
+			height: 10px;
+			width: 10px;
+			border-radius: 50%;
+			border: 1px solid #fff;
+			background-color: #a0a0a0;
+		}
+		.er-online {
+			background-color: #2ab674;
+		}
+		.er-offline {
+			background-color: #a0a0a0;
+		}
+		.er-user-info {
+			margin-top: 0;
+			margin-bottom: auto;
+			margin-left: 15px;
+			span {
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 22px;
+				color: #555;
+			}
+			p {
+				margin-bottom: 0;
+				color: #888;
+				font-size: 12px;
+				line-height: 15px;
+				font-weight: 300;
+			}
+		}
+		.er-chat-icon {
+			margin-top: -46px;
+			right: -10px;
+			position: absolute;
+			color: #d4d4d4;
+			font-size: 60px;
+			opacity: 0.5;
+			transition: all 0.05s ease-in-out;
+			overflow: hidden;
+		}
+	}
+	.er-body {
+		&:hover {
+			text-decoration: none;
+			cursor: pointer;
+			.er-user-img {
+				transition: all 0.3s ease-in-out;
+			}
+		}
+		li {
+			display: block;
+			padding: 10px;
+			position: relative;
+			overflow-x: hidden;
+			overflow-y: hidden;
+			border-bottom: 1px solid #eee;
+			list-style-type: none;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				background-color: rgba(42, 182, 116, 0.07);
+				.er-chat-icon {
+					color: #555;
+					transition: all 0.05s ease-in-out;
+					i {
+						transition: all 0.3s ease-in-out;
+					}
+				}
+			}
+		}
+		.er-chat-icon i {
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}
+.er-right-bottom {
+	bottom: 15px;
+	right: 15px;
+	float: right;
+	.er-box {
+		background-color: #f5f5f5;
+		border: 2px solid #2ab674;
+		&:hover {
+			transition: all 0.3s ease-in-out;
+			box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+		}
+	}
+}
+@keyframes er-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-moz-keyframes er-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-webkit-keyframes er-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-ms-keyframes er-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@-o-keyframes er-fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.rotateForward {
+	animation-name: rotateF;
+	animation-duration: 0.65s;
+	animation-iteration-count: 1;
+}
+
+@keyframes rotateF {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.rotateBackward {
+	animation-name: rotateB;
+	animation-duration: 0.65s;
+	animation-iteration-count: 1;
+}
+@keyframes rotateB {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+.er-panel .er-body ul {
+	margin: 0;
+	padding: 0;
+}

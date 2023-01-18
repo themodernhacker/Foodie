@@ -1,0 +1,256 @@
+/*----  Whatsapp chat start  ----*/
+a {
+  text-decoration: none !important;
+}
+
+.er-style {
+  display: inline-block;
+  position: fixed;
+  letter-spacing: 0.1px;
+  z-index: 13;
+}
+.er-style .er-button {
+  width: 36px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.er-style .er-button .whatsapp {
+  width: 23px;
+  height: 23px;
+  display: table;
+  margin-right: 0;
+  font-size: 25px;
+  text-align: center;
+  line-height: 38px;
+  cursor: pointer;
+  color: #2ab674;
+}
+.er-style .er-panel {
+  display: none;
+  margin-bottom: 5px;
+  width: 275px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.479);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.479);
+  background-color: #fff;
+}
+.er-style .er-panel .er-header {
+  padding: 12px 15px 15px;
+  text-align: center;
+  color: #fff;
+  background: #2ab674;
+}
+.er-style .er-panel .er-body {
+  min-width: 250px;
+  white-space: nowrap;
+  list-style: none;
+  overflow-y: auto;
+}
+.er-style .er-header strong {
+  font-size: 15px;
+  line-height: 20px;
+}
+.er-style .er-header p {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+}
+.er-style .er-list .d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.er-style .er-list .er-img-cont {
+  position: relative;
+}
+.er-style .er-list .er-user-img {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+.er-style .er-list .er-status-icon {
+  position: absolute;
+  bottom: 5px;
+  right: 1px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #a0a0a0;
+}
+.er-style .er-list .er-online {
+  background-color: #2ab674;
+}
+.er-style .er-list .er-offline {
+  background-color: #a0a0a0;
+}
+.er-style .er-list .er-user-info {
+  margin-top: 0;
+  margin-bottom: auto;
+  margin-left: 15px;
+}
+.er-style .er-list .er-user-info span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #555;
+}
+.er-style .er-list .er-user-info p {
+  margin-bottom: 0;
+  color: #888;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 300;
+}
+.er-style .er-list .er-chat-icon {
+  margin-top: -46px;
+  right: -10px;
+  position: absolute;
+  color: #d4d4d4;
+  font-size: 60px;
+  opacity: 0.5;
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+  overflow: hidden;
+}
+.er-style .er-body:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.er-style .er-body:hover .er-user-img {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.er-style .er-body li {
+  display: block;
+  padding: 10px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-bottom: 1px solid #eee;
+  list-style-type: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.er-style .er-body li:hover {
+  background-color: rgba(42, 182, 116, 0.07);
+}
+.er-style .er-body li:hover .er-chat-icon {
+  color: #555;
+  -webkit-transition: all 0.05s ease-in-out;
+  transition: all 0.05s ease-in-out;
+}
+.er-style .er-body li:hover .er-chat-icon i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.er-style .er-body .er-chat-icon i {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.er-right-bottom {
+  bottom: 15px;
+  right: 15px;
+  float: right;
+}
+.er-right-bottom .er-box {
+  background-color: #f5f5f5;
+  border: 2px solid #2ab674;
+}
+.er-right-bottom .er-box:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes er-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes er-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.rotateForward {
+  -webkit-animation-name: rotateF;
+          animation-name: rotateF;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rotateF {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateF {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.rotateBackward {
+  -webkit-animation-name: rotateB;
+          animation-name: rotateB;
+  -webkit-animation-duration: 0.65s;
+          animation-duration: 0.65s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rotateB {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateB {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+.er-panel .er-body ul {
+  margin: 0;
+  padding: 0;
+}
